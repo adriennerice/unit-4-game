@@ -3,35 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
+    <title>Turtle Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!-- <script src="game.js"></script> -->
     
 </head>
 <body>
     <div class="container">
-        <!-- <h1>Crystal Collector</h1>
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-        <p>You win the game by mataching your total score to a random number, you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click it.</p>
-        <p>Each time the game starts, the game will change the values of each crystal.</p> -->
-        <span id="message"></span>
-        <p>Match this Number: <span id="guessNumber"></span></p>
-        <p>Wins: <span id="wins"></span></p>
-        <p>Losses: <span id="loss"></span></p>
-
+        <div class = "jumbotron">
+            <h1 class="header">Turtle Collector</h1>
+            <hr>
+            <h4><span id="message"></span></h4></p>
+            <hr>
+            <div class ="row">
+                <div class="col-lg-6">
+                    <h4>Match this Number: <span id="guessNumber"></span></h4>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Your total score is: <span id="playerTotal"></span></h4>
+                </div>
+            </div>
+        </div>
+        <div class = "jumbotron">
+             <div class = "row">
+                <div class="col-lg-6">
+                    <h4>Wins: <span id="wins"></span></h4>
+                </div>
+                <div class="col-lg-6">
+                    <button type="button" id="restart" class ="btn btn-success" onclick="start()"><h1>Start</h1></button>
+                </div>
+            </div>
+            <div class= "row">
+                <div class="col-lg-6">
+                    <h4>Losses: <span id="loss"></span></h4>
+                </div>
+            </div>
+        </div> 
         <div id="image">
         </div>
         
-        <p>Your total score is: <div id="playerTotal"></div></p>
-        
-        <button id="restart" onclick="start()">New Game</button>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </div>
 
     

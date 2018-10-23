@@ -1,4 +1,29 @@
 .imageSize {
     height: 200px;
-    width: 200px;
+    width: 25%;
 }
+
+img:hover {
+    border: solid;
+    border-color: green;
+}
+
+.image {
+    align: center;
+}
+
+.jumbotron {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header {
+    color: green;
+    text-align: center;
+}
+
+h4 {
+    line-height: 1.8;
+}
+
+
